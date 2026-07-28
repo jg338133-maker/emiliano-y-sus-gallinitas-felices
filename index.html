@@ -26,22 +26,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Caveat:wght@500;600;700&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --cream:        #FBF3E4;
-    --cream-deep:   #F5E7C6;
+    --cream:        #F8EBD6;
+    --cream-deep:   #EFD8A8;
     --paper:        #FFFDF7;
-    --sage-wash:    #EAF3DF;
-    --peach-wash:   #FBEADD;
-    --honey-wash:   #FBF1D9;
+    --sage-wash:    #DDECCB;
+    --peach-wash:   #F6D8C3;
+    --honey-wash:   #F4E2B7;
     --ink:          #43331F;
-    --ink-soft:     #6C5A44;
-    --ink-faint:    #8B7A63;
+    --ink-soft:     #5B4935;
+    --ink-faint:    #76644D;
     --pasture:      #57A03A;
     --pasture-deep: #3B7530;
     --pasture-soft: #90C46F;
     --yolk:         #F2B534;
     --yolk-deep:    #C67E1C;
     --clay:         #D96E3B;
-    --line:         #EAD9AE;
+    --line:         #DCC58E;
     --shadow:       0 18px 40px rgba(57,44,30,0.16);
     --shadow-soft:  0 8px 22px rgba(57,44,30,0.10);
     --radius-card:  22px;
@@ -362,10 +362,10 @@
   .process-overview .section-head{ max-width:780px; }
   .process-cycle{
     padding:32px; border-radius:var(--radius-card); border:1px solid var(--line);
-    background:rgba(255,253,247,0.78); box-shadow:var(--shadow-soft);
+    background:var(--paper); box-shadow:var(--shadow-soft);
   }
   .process-cycle .cycle-diagram{
-    background:radial-gradient(circle, rgba(234,243,223,0.96) 0%, rgba(255,253,247,0.52) 66%);
+    background:radial-gradient(circle, var(--sage-wash) 0%, #F7F5E9 66%);
     border-radius:50%;
   }
   .process-proof-list .card{
@@ -380,7 +380,7 @@
   }
   .diet-card{
     max-width:var(--maxw); margin:0 auto; padding:34px; border-radius:var(--radius-card);
-    background:rgba(255,253,247,0.08); border:1px solid rgba(255,253,247,0.20); box-shadow:var(--shadow);
+    background:rgba(255,253,247,0.16); border:1px solid rgba(255,253,247,0.34); box-shadow:var(--shadow);
   }
   .diet-card .polaroid{ background:var(--paper); box-shadow:var(--shadow); }
   .story-showcase{ background:linear-gradient(180deg, var(--paper) 0%, var(--honey-wash) 100%); }
@@ -388,7 +388,7 @@
     max-width:var(--maxw); margin:0 auto; padding:34px; border-radius:var(--radius-card);
     background:
       radial-gradient(circle at 8% 12%, rgba(217,110,59,0.14), transparent 28%),
-      linear-gradient(135deg, var(--paper) 0%, var(--peach-wash) 100%);
+      linear-gradient(135deg, #FFF8ED 0%, var(--peach-wash) 100%);
     border:1px solid var(--line); box-shadow:var(--shadow-soft);
   }
   .story-card .polaroid{ background:var(--paper); box-shadow:var(--shadow); }
@@ -462,8 +462,8 @@
   .identity-grid{ max-width:var(--maxw); margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
   .about-overview{
     background:
-      radial-gradient(circle at 90% 12%, rgba(144,196,111,0.22), transparent 26%),
-      linear-gradient(180deg, var(--paper) 0%, var(--sage-wash) 100%);
+      radial-gradient(circle at 90% 12%, rgba(144,196,111,0.30), transparent 26%),
+      linear-gradient(180deg, #FFF8ED 0%, var(--sage-wash) 100%);
   }
   .about-overview .section-head{ max-width:760px; }
   .identity-card{
@@ -541,8 +541,8 @@
   .product-hero{
     max-width:var(--maxw); margin:0 auto 58px; padding:34px; border:1px solid var(--line);
     border-radius:var(--radius-card); background:
-      radial-gradient(circle at 92% 12%, rgba(242,181,52,0.24), transparent 28%),
-      linear-gradient(135deg, var(--paper) 0%, var(--sage-wash) 58%, var(--honey-wash) 100%);
+      radial-gradient(circle at 92% 12%, rgba(242,181,52,0.32), transparent 28%),
+      linear-gradient(135deg, #FFF8ED 0%, var(--sage-wash) 58%, var(--honey-wash) 100%);
     box-shadow:var(--shadow-soft); overflow:hidden; position:relative;
   }
   .product-hero::after{
@@ -554,7 +554,7 @@
   .product-highlights{ display:flex; flex-wrap:wrap; gap:10px; margin:0 0 26px; }
   .product-chip{
     display:inline-flex; align-items:center; gap:8px; min-height:34px; border-radius:999px;
-    padding:8px 12px; background:rgba(255,253,247,0.82); border:1px solid var(--line);
+    padding:8px 12px; background:var(--paper); border:1px solid var(--line);
     color:var(--pasture-deep); font-weight:800; font-size:13px; box-shadow:0 8px 18px rgba(57,44,30,0.06);
   }
   .product-chip::before{ content:''; width:7px; height:7px; border-radius:50%; background:var(--clay); flex-shrink:0; }
@@ -620,7 +620,7 @@
   .price-card .btn{ margin-top:auto; align-self:flex-start; }
   .order-steps{
     display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:24px;
-    background:rgba(255,253,247,0.72); border:1px solid rgba(57,44,30,0.06); border-radius:18px; padding:16px;
+    background:var(--paper); border:1px solid var(--line); border-radius:18px; padding:16px;
   }
   .order-step{ display:flex; gap:12px; align-items:flex-start; color:var(--ink-soft); font-size:14px; line-height:1.55; }
   .order-step .num{
